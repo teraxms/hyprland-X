@@ -1,56 +1,58 @@
 # Hyprland by Terax
 
-Welcome to my Hyprland configuration! This setup is designed to provide a clean, efficient, and visually appealing desktop environment.
+Добро пожаловать в мою конфигурацию Hyprland! Этот настройка предназначена для того, чтобы обеспечить чистую, эффективную и визуально привлекательную рабочую среду с личными настройками.
 
-## Dependencies
+## Зависимости
 
-- **Window Manager**: Hyprland
-- **Terminal**: Kitty  
-- **Launcher**: Wofi
-- **Bar**: Waybar
-- **Notifications**: Mako
-- **Wallpaper**: Hyprpaper
-- **Color Generator**: Pywal
+- **Менеджер окон**: Hyprland — динамичный тайловый Wayland-композитор.
+- **Композитор**: Wayland для плавной и современной графики.
+- **Терминал**: Kitty — быстрый и функциональный терминал с поддержкой GPU.
+- **Запускатор приложений**: Wofi — нативный Wayland-запускатор приложений.
+- **Панель**: Waybar — высоко настраиваемая статус-панель.
+- **Уведомления**: Mako — легкий демон уведомлений для Wayland.
+- **Менеджер обоев**: Hyprpaper — нативный менеджер обоев для Wayland.
+- **Генератор цветовых схем**: Pywal — инструмент для генерации и применения цветовых схем на основе вашего фона рабочего стола.
 
-## Installation
+## Особенности
 
-1. Install dependencies:
-```bash
-sudo pacman -S hyprland kitty wofi waybar mako zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpaper
+- Включает 187 личных обоев.
+- Рабочие скрипты для смены обоев (Super+W, Super+R).
+- Переключение конфигурации Waybar (Super+X).
 
-Install Pywal:
+## Скриншоты
 
-bash
-pip install pywal
+*Скриншот рабочего стола*
 
-Clone and apply configuration:
+## Установка
 
-bash
-git clone https://github.com/teraxms/hyprland-by-terax.git
-cd hyprland-by-terax
-cp -r .config/* ~/.config/
+1. Клонируйте этот репозиторий:
+    ```bash
+    git clone https://github.com/teraxms/hyprland-X.git
+    cd hyprland-X
+    ```
 
-Features
-Automatic color schemes from wallpapers
+2. Установите необходимые зависимости:
+    ```bash
+    sudo pacman -S hyprland kitty wofi waybar mako zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpaper
+    pip install pywal
+    ```
 
-Pre-configured applications
+3. Скопируйте конфигурационные файлы в их соответствующие директории:
+    ```bash
+    cp -r .config/* ~/.config/
+    ```
 
-Custom status bar
+4. Обновите конфигурации Waybar и Wofi:
+    Если в вашей конфигурации Waybar и Wofi используется CSS файл, например:
+    ```css
+    @import "/home/teraxms/.cache/wal/colors-waybar.css";
+    ```
+    убедитесь, что вы заменили "teraxms" на ваше фактическое имя пользователя.
 
-Smooth animations
+5. Перезапустите сессию и наслаждайтесь новым настроем!
 
-Personal wallpaper collection
+## Кастомизация
 
-Enjoy your new Hyprland setup!
+Не стесняйтесь изменять конфигурационные файлы в директории `~/.config` для подгонки под ваши предпочтения.
 
-text
-
-**Сохрани (Ctrl+O → Enter) и выйди (Ctrl+X)**
-
-Теперь загрузи:
-
-```bash
-git add README.md
-git commit -m "Update README with clean installation guide"
-git push origin main
-
+Наслаждайтесь своей конфигурацией Hyprland!
