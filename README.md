@@ -29,8 +29,7 @@
 
 2. Установите необходимые зависимости:
     ```bash
-    sudo pacman -S hyprland kitty wofi waybar mako zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpaper python-pipx
-pipx install pywal
+    sudo pacman -S hyprland kitty wofi waybar mako zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprpaper python-pipx pipx install pywal
     ```
 
 3. Скопируйте конфигурационные файлы в их соответствующие директории:
