@@ -1,5 +1,5 @@
 #!/bin/bash
-WALLPAPER_DIR="$HOME/mkhmtdots/.config/wallpapers"
+WALLPAPER_DIR="$HOME/hyprland-X/.config/wallpapers"
 SELECTED_WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.jpeg" \) -exec basename {} \; | wofi --dmenu --prompt "Select wallpaper:")
 
 if [ -n "$SELECTED_WALLPAPER" ]; then
